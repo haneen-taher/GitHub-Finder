@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./github-289345/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Find Users</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="logo">
+        <i class="fa-brands fa-github" style="color: #ffffff"></i>
+      </div>
+      <div class="right-side">
+        <div class="notification">
+          <a href="#"
+            ><i class="fa-regular fa-bell" style="color: #ffffff"></i
+          ></a>
+        </div>
+        <div class="add-comp">
+          <a href="#"
+            ><i class="fa-regular fa-plus" style="color: #ffffff"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-solid fa-caret-down" style="color: #ffffff"></i
+          ></a>
+        </div>
+        <div class="avatar">
+          <a href="#"
+            ><i class="fa-regular fa-circle" style="color: #ffffff"> </i
+          ></a>
+          <a href="#"
+            ><i class="fa-solid fa-caret-down" style="color: #ffffff"></i
+          ></a>
+        </div>
+      </div>
+      <nav class="nav-items">
+        <div class="search-wrapper">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #656d76"></i>
+          </div>
+          <div class="search-container">
+            <input
+              type="search"
+              id="search"
+              placeholder="       Search or jump to...                                                              / "
+            />
+          </div>
+        </div>
+        <ul>
+          <li><a href="./view2.html">Comparison</a></li>
+          <li><a href="#">Issues</a></li>
+          <li><a href="#">Codespaces</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Explore</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main-->
+
+    <h1 class="txt2">GitHub Competition</h1>
+    <div class="input-wrapper">
+      <input type="text" placeholder="Enter Username here" class="user-input" id="user-input" />
+      <button id="submit-btn" class="submit-btn">Enter the first user</button>
+      <button id="submit-btn2" class="submit-btn">Enter the second user</button>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h3 id="user-name1"  class="card-title">User 1</h3>
+        <p class="card-description">
+          <p>No. of Repositories</p>
+         <span id="repo1" class="repos">500</span>
+          <p>No. of Followers</p>
+          <span id="follower1" class="followers">500</span>
+        </p>
+        <span id="result"></span>
+      </div>
+      <div>
+        <img class="imgs" src="./letter.png" alt="Versus" />
+      </div>
+
+      <div class="card">
+        <h3  id="user-name2"class="card-title">User 2</h3>
+        <p class="card-description">
+          <p>No. of Repositories</p>
+         <span id="repo2" class="repos">500</span>
+          <p>No. of Followers</p>
+          <span id="follower2" class="#followers">500</span>
+        </p>
+        <span id="result-1"></span>
+      </div>
+      
+    </div>
+    <button id="submit-btn-1" class="submit-btn-1">Compare</button>
+
+    
+    <!--Footer-->
+    <footer class="footer">
+      <div class="rights">
+        <i class="fa-brands fa-github" style="color: #656d76"></i>
+        <p class="copyrights">&copy;2023 GitHub, Inc.</p>
+      </div>
+      <div class="links">
+        <ul class="list">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Status</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Contact GitHub</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./view2.js"></script>
+  </body>
+</html>
